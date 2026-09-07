@@ -1,3 +1,6 @@
+import streamlit as st
+
+api_key = st.secrets["GEMINI_API_KEY"]
 import os
 import tempfile
 
