@@ -14,13 +14,13 @@ st.caption("Record or upload audio and transcribe it with Gemini 3.5 Transcribe.
 
 def get_api_key():
     try:
-        key = st.secrets.get("GEMINI_API_KEY")
+        key = st.secrets.get("AQ.Ab8RN6JfTWDCWDT7E9u7up0-ZBzrqycZURe4bLX0g-EVkB-gWA")
         if key:
             return str(key).strip()
     except Exception:
         pass
 
-    key = os.getenv("GEMINI_API_KEY")
+    key = os.getenv("AQ.Ab8RN6JfTWDCWDT7E9u7up0-ZBzrqycZURe4bLX0g-EVkB-gWA")
     return key.strip() if key else None
 
 
@@ -62,7 +62,7 @@ if not api_key:
     st.error("Gemini API key not found.")
     st.info(
         'Create ".streamlit/secrets.toml" and add: '
-        'GEMINI_API_KEY = "YOUR_GEMINI_API_KEY"'
+        'GEMINI_API_KEY = "AQ.Ab8RN6JfTWDCWDT7E9u7up0-ZBzrqycZURe4bLX0g-EVkB-gWA"'
     )
     st.stop()
 
