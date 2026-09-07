@@ -25,7 +25,7 @@ def get_api_key() -> str | None:
     """Read the Gemini API key from Streamlit secrets or an environment variable."""
     try:
         if "GEMINI_API_KEY" in st.secrets:
-            return st.secrets["GEMINI_API_KEY"]
+            return st.secrets["AQ.Ab8RN6JfTWDCWDT7E9u7up0-ZBzrqycZURe4bLX0g-EVkB-gWA"]
     except Exception:
         # st.secrets may not be configured locally.
         pass
